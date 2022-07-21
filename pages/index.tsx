@@ -2,19 +2,21 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/index.module.css";
 import Header from "../components/Header";
-import Menu from "../components/Menu";
+//import Menu from "../components/Menu";
 import Landing from "../components/Landing";
 import Top from "../components/Top";
 import CategoryMain from "../components/CategoryMain";
 import { sanityClient } from "../sanity";
 import { Category, Post } from "../types.d";
+import MenuBar from '../components/MenuBar'
+
 
 interface Props {
   categories: Category;
   posts: Post;
 }
 
-const Home: NextPage = ({ categories, posts }: Props) => {
+const Home: NextPage | any = ({ categories, posts }: Props) => {
   //console.log(categories)
   //console.log(posts)
   return (
@@ -25,10 +27,11 @@ const Home: NextPage = ({ categories, posts }: Props) => {
       </Head>
 
       <Header />
-      <Menu />
+      {/* <Menu /> */}
       <Landing />
       <CategoryMain categories={categories} posts={posts} />
       <Top />
+      <MenuBar/>
     </div>
   );
 };

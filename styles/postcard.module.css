@@ -1,6 +1,6 @@
 .postCardMain {
-  width: 230px;
-  height: 160px;
+  width: 270px;
+  height: 200px;
   color: white;
   margin: 10px;
   /* margin-top: 15px; */
@@ -38,10 +38,10 @@
   font-weight: 500;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
   .postCardMain {
-    width: 95vw;
-    height: 65vw;
+    width: 95%;
+    height: 55vw;
     color: black;
     margin: 15px 0;
     display: flex;

@@ -1,0 +1,36 @@
+.menuBar{
+    width: 60px;
+    height: 100vh;
+    /* border: 1px solid white; */
+    background: black;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.menuBar > div{
+    width: 100%;
+    height: 70px;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* margin: 10px 0; */
+}
+
+.heroIcon{
+    height: 30px;
+    width: 30px;
+    color: white;
+}
+
+.title{
+    color: white;
+    font-size: 10px;
+}

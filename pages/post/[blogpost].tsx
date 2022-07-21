@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Header from "C:/next-js-blog/blogr/components/Header";
-import Menu from "C:/next-js-blog/blogr/components/Menu";
+//import Menu from "C:/next-js-blog/blogr/components/Menu";
 import { sanityClient, urlFor } from "C:/next-js-blog/blogr/sanity.js";
 import BlogPost from "C:/next-js-blog/blogr/components/BlogPost";
 import styles from "C:/next-js-blog/blogr/styles/post.module.css";
@@ -18,7 +18,6 @@ const Post: NextPage = ({post}) => {
       </Head>
       <Header />
       <BlogPost post={post} />
-      <Menu />
     </div>
   );
 };

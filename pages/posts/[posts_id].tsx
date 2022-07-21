@@ -2,9 +2,11 @@ import type { NextPage } from "next";
 import styles from "C:/next-js-blog/blogr/styles/posts.module.css";
 import Head from "next/head";
 import Header from "C:/next-js-blog/blogr/components/Header";
-import Menu from "C:/next-js-blog/blogr/components/Menu";
+//import Menu from "C:/next-js-blog/blogr/components/Menu";
 import PostsMain from "C:/next-js-blog/blogr/components/PostsMain";
 import { sanityClient } from "C:/next-js-blog/blogr/sanity.js";
+import MenuBar from "../../components/MenuBar";
+
 
 
 const BlogPosts: NextPage = ({ posts }: any) => {
@@ -17,9 +19,9 @@ const BlogPosts: NextPage = ({ posts }: any) => {
         <title>Blogr</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header/>
-      <PostsMain posts = {posts} />
-      <Menu />
+      <Header />
+      <PostsMain posts={posts} />
+      <MenuBar />
     </div>
   );
 };

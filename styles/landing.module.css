@@ -1,110 +1,104 @@
-.landingMain{
-	height: calc(100vh - 50px);
-	/* height: 100vh; */
-	width: 100vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: flex-start;
-	background: url('/images/cover2.jpg') no-repeat center center fixed;
-	background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	/* filter: grayscale(10%); */
-	margin-top: 50px;
+.landingMain {
+  height: calc(100vh - 50px);
+  /* height: 100vh; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background: url("/images/cover2.jpg") no-repeat center center fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  /* filter: grayscale(10%); */
+  margin-top: 50px;
 }
 
-.landingMessage{
-	width: 550px;
-	height: 300px;
-	/* border: 1px solid white; */
-	margin-bottom: 20px;
-	margin-left: 50px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
+.landingMessage {
+  width: 550px;
+  height: 300px;
+  /* border: 1px solid white; */
+  margin-bottom: 20px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.get{
-	font-size: 45px;
-	color: rgb(255, 255, 255);
-	font-weight: 1000;
+.get {
+  font-size: 45px;
+  color: rgb(255, 255, 255);
+  font-weight: 1000;
 }
 
-.lorem{
-	font-size: 15px;
-	color: white;
-	font-weight: 300;
+.lorem {
+  font-size: 15px;
+  color: white;
+  font-weight: 300;
 }
 
-.landingMessage > button{
-	width: 140px;
-	height: 35px;
-	color: white;
-	background-color: rgb(9, 89, 238);
-	margin-top: 20px;
-	border-radius: 5px;
-	border: 0;
-	cursor: pointer;
+.landingMessage > button {
+  width: 140px;
+  height: 35px;
+  color: white;
+  background-color: rgb(9, 89, 238);
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
 }
 
+@media only screen and (max-width: 420px) {
+  .landingMain {
+    height: calc(100vh - 50px);
+    /* height: 100vh; */
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background: url("/images/cover2.jpg") no-repeat center center fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /* filter: grayscale(10%); */
+    margin-top: 50px;
+  }
 
-@media only screen and (max-width: 500px){
+  .landingMessage {
+    width: 300px;
+    height: auto;
+    /* border: 1px solid white; */
+    margin-bottom: 20px;
+    /* margin-left: 50px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10px;
+  }
 
-	.landingMain{
-	height: calc(100vh - 50px);
-	/* height: 100vh; */
-	width: 100vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: flex-start;
-	background: url('/images/cover2.jpg') no-repeat center center fixed;
-	background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	/* filter: grayscale(10%); */
-	margin-top: 50px;
-}
+  .get {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 1000;
+  }
 
-.landingMessage{
-	width: auto;
-	height: auto;
-	/* border: 1px solid white; */
-	margin-bottom: 20px;
-	/* margin-left: 50px; */
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-	margin-left: 10px;
-}
+  .lorem {
+    font-size: 12px;
+    color: white;
+    font-weight: 300;
+  }
 
-.get{
-	font-size: 30px;
-	color: rgb(255, 255, 255);
-	font-weight: 1000;
-}
-
-.lorem{
-	font-size: 12px;
-	color: white;
-	font-weight: 300;
-}
-
-.landingMessage > button{
-	width: 140px;
-	height: 35px;
-	color: white;
-	background-color: rgb(9, 89, 238);
-	margin-top: 20px;
-	border-radius: 5px;
-	border: 0;
-	cursor: pointer;
-}
-
-
-
-
+  .landingMessage > button {
+    width: 140px;
+    height: 35px;
+    color: white;
+    background-color: rgb(9, 89, 238);
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+  }
 }
